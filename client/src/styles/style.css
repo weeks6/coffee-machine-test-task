@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+@import url('./normalize.css');
+
+:root {
+    --font-primary: 'Roboto Mono', monospace;
+    --color-accent: #466362;
+    --color-accent-hover: #5f8d8a;
+    --color-secondary: #f2f2f2;
+    --color-error: #f44336;
+    --text-primary: #333333;
+}
+
+h1, h2, h3, h4, h5, h6, legend, label {
+    font-family: var(--font-primary);
+    color: var(--text-primary);
+}
+
+img, video, picture {
+    max-width: 100%;
+    display: block;
+}
+
+fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    display: block;
+    font-size: 1.2rem;
+}
+
+input {
+    accent-color: var(--color-accent);
+}
+
+.visually-hidden {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	padding: 0 !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	clip: rect(0,0,0,0) !important;
+	white-space: nowrap !important;
+	border: 0 !important;
+}
